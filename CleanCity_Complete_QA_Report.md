@@ -105,6 +105,7 @@ CleanCity shows promise as a community-oriented waste management app. With focus
 ## 🗂 Attachments
 
 - [test-plan.md](./test-plan.md)
-- [test-cases.md](./test-cases.md)
+- [test-cases.md](./tes[test-plan.md](https://github.com/user-attachments/files/21665895/test-plan.md)
+t-cases.md)[CleanCity_Complete_QA_Report.md](https://github.com/user-attachments/files/21665896/CleanCity_Complete_QA_Report.md)
 - [defect-log.md](./defect-log.md)
 - [screenshots/](./screenshots/)
