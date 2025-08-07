@@ -1,0 +1,65 @@
+ CleanCity - Comprehensive QA Test Report
+ Executive Summary
+ This Quality Assurance (QA) report provides a comprehensive analysis of the CleanCity web
+ application, a waste management system designed to help users schedule pickups, engage in
+ community content, and raise environmental awareness. Testing was guided by the documented
+ functional requirements (FR-001 to FR-097). The evaluation included functional, usability, security,
+ accessibility, and compatibility testing. This report outlines test strategies, findings, risks, and
+ recommendations for improvement.
+ Test Strategy & Approach
+ The testing approach involved manual black-box testing using the CleanCity functional
+ requirements document. Testing included: - Functional Testing - Usability & UX testing 
+Compatibility Testing - Accessibility checks - Data validation and security assessment Browsers:
+ Chrome, Firefox (latest versions) Devices: Desktop 1920x1080, Mobile View Storage: Browser
+ localStorage
+ Test Cases
+ Test Case ID Scenario
+ TC-001
+ TC-002
+ TC-003
+ Filter requests by 'Eldoret'
+ Expected Result
+ Actual Result
+ Only Eldoret data should display Nairobi data shown
+ Submit feedback with empty comments Error message should be shown No error, accepted
+ Register with valid info
+ Bugs Found
+ Account should be created
+ Success message shown
+ Bug ID
+ Title
+ Description
+ BUG-001 Eldoret filter shows Nairobi data Filtering by Eldoret incorrectly shows Nairobi requests.
+ BUG-002 Password stored in plain text
+ Passwords saved in localStorage without encryption.
+ BUG-003 Feedback form lacks validation
+ Allows submission with empty comment field.
+ Risk Assessment & Recommendations
+ Critical issues such as incorrect data filtering and lack of validation could lead to user frustration,
+ data integrity problems, or security vulnerabilities. The app currently stores passwords in plain text
+ using localStorage, which is a significant security risk. Recommendations: - 
+ Encrypt sensitive
+ data (e.g., hashed passwords) - 
+ Implement strong form validation across all modules - 
+Improve dashboard filters and ensure consistent UI updates -  Ensure mobile responsiveness and
+ accessibility (WCAG 2.1 compliance) -  Add backend support for scalable, secure storage and
+ analytics
+ Functional Requirements Coverage
+Tested features (from functional-requirements.md):  Registration & Login (FR-001 to FR-007) 
+Pickup Scheduling (FR-012 to FR-019)  Dashboard (FR-023, FR-024)  Feedback System
+ (FR-022)  Proper validation (FR-002, FR-091)  Secure storage (FR-078)  Accessibility support
+ (FR-071 to FR-074) Partially tested: Admin Panel, Notifications, Community Feed
+ Jira Kanban Board (Mockup)
+ To Do
+ In Progress
+ BUG-001: Location filter error
+ In Review
+ Done
+ TC-002: Feedback form validation
+ BUG-003: Missing validation TC-003: Registration success
+Conclusion
+ The CleanCity app provides a solid foundation for a waste management platform. However, several
+ critical areas require refinement before it can be considered production-ready. Most notably, the
+ current use of localStorage without encryption, lack of form validation, and inconsistent UI filtering
+ need urgent attention. With structured improvements guided by QA feedback, the system can
+ become highly reliable, user-friendly, and secure.
